@@ -1,0 +1,296 @@
+/* common css  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+/* font-family: 'Cedarville Cursive', cursive;
+ */
+html{
+    scroll-behavior: smooth;
+}
+
+.icon{
+    color: tomato;
+    font-size: 5rem;
+    
+}
+img{
+   width: 100%;
+}
+
+/* navbar start  */
+.navbar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px gray;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: tomato;
+    font-size: 1.5rem;
+    transition: .5s;
+}
+nav ul li a:hover{
+    color: black;
+}
+span{
+    color: tomato;
+}
+/* hero section start here  */
+.hero-container{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 0 20px;
+}
+.hero-container div{
+    width: 50%;
+    margin: 15px 0;
+}
+#hero-img{
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid tomato;
+    display: block;
+    margin: 0 auto;
+}
+.hero-text{
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: tomato;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    
+    transition: 0.5s;
+    display: inline-block;
+    margin: 10px 5px;
+
+}
+.btn:hover{
+    box-shadow: 2px 2px 5px gray;
+}
+
+/* about me section  */
+
+#about-section{
+    background-color: #ccc;
+    padding: 0 30px;
+}
+.section-title{
+    text-align: center;
+    padding-top: 30px;
+
+}
+.hr-style{
+    width: 100px;
+    
+    border: 2px solid tomato;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+.about-container{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.about-container div{
+    width: 50%;
+}
+#about-img{
+    width: 300px;
+    border: 2px solid black;
+}
+.about-text p{
+    line-height: 1.5;
+    font-size: 1.2rem;
+    
+}
+
+/* skill section start  */
+#skill-section{
+    min-height: 80vh;
+}
+.skill-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+}
+
+.skill-card{
+    width: 125px;
+    background-color: tomato;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.5s;
+}
+.skill-card-style{
+    font-size: 5rem;
+    color: white;
+}
+.skill-card h2{
+    color: white;
+    font-size: 1rem;
+}
+.skill-card:hover{
+    background-color: #333;
+    transform: scale(1.1);
+}
+/* service section starts  */
+
+#service-section{
+    background-color: #ccc;
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.service-card{
+    width: 250px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.service-icon{
+    font-size: 5rem;
+    color: tomato;
+    
+}
+
+/* contact section start here  */
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    
+}
+
+form{
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+}
+input,textarea{
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(184, 184, 184, 0.259);
+
+}
+textarea{
+height: 200px;
+}
+input:focus,textarea:focus{
+   outline: none;
+}
+.form-control{
+    margin: 10px;
+}
+input[type=submit]{
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    padding: 10px;
+  
+  min-height: 10vh;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+}
+.footer-container div{
+    width: 50%;
+    text-align: center;
+}
+.social-icon{
+    background-color: aliceblue;
+    color: black;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    
+}
+.social-icon:hover{
+    background-color: tomato;
+}
+.heart-icon{
+    color: red;
+}
+
+@media screen and (max-width:700px) {
+
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a {
+        display: block;
+        padding: 15px 0;
+    }
+    .hero-container{
+        flex-direction: column;
+    }
+    .hero-container div{
+        text-align: center;
+        width: 100%;
+    }
+
+    /* about section start here  */
+    .about-container{
+        flex-direction: column;
+    }
+    .about-container div{
+        padding: 20px ;
+        width: 100%;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-container div{
+        will-change: 100%;
+    }
+}
